@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.vinayak.model.Employee" table = "EMPLOYEE1">
+      <id name = "empId" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      <property name = "empName" column = "Employee_name" type = "string"/>
+       <property name = "empDept" column = "Employee_dept" type = "string"/>
+        <property name = "empMentor" column = "Employee_mentor" type = "string"/>
+         <property name = "empSalary" column = "Employee_salary" type = "string"/>
+   </class>
+</hibernate-mapping>
